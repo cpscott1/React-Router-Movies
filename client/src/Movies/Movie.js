@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import SavedList from './SavedList';
-import MovieList from './MovieList';
 export default class Movie extends Component {
   constructor(props) {
     super(props);
