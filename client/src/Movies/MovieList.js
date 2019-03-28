@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default class MovieList extends Component {
@@ -36,6 +37,7 @@ function MovieDetails({ movie }) {
   return (
     <div className="movie-card">
       <h2>{title}</h2>
+      <Link to={`/movies/${movie.id}`} />
       <div className="movie-director">
         Director: <em>{director}</em>
       </div>
